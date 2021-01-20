@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22-L Javascript</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+<body id="body">
+
+<div class="container">
+    <div class="row text-center">
+        <div class="col-4 mt-3">
+            <button type="button" class="btn btn-success" onclick="console.log('Helo world')">Click me!</button>
+
+            <p id="text">Hello world!</p>
+            <p id="text2"> </p>
+
+
+            <button type="button" class="btn btn-success" ondblclick="myFunction()">Click me!</button>
+        </div>
+        <div class="col-4 mt-3">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Bulb is switched off</h3>
+                </div>
+                <div class="card-body">
+                    <img src="images/pic_bulboff.gif" alt="" id="bulb" class="w-100">
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-success" onclick="switchOn()">Switch on</button>
+                    <button type="button" class="btn btn-danger" onclick="switchOff()">Switch off</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+<script>
+    console.log("This text from internal method");
+
+    console.log(document.getElementById('text'));
+
+    document.getElementById('text').innerText = "<span class='text-denger'>This text from innerText method</span>";
+
+    document.getElementById("text2").innerHTML = "<span class='text-denger'>This text from innerText method</span>";
+
+    document.write("This text from document.write method");
+
+    // alert("This is an alert")
+
+
+
+</script>
+</body>
+</html>

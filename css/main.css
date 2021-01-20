@@ -1,0 +1,7 @@
+button{
+    cursor: pointer !important;
+}
+
+body{
+    transition: /****all, background-color, ...***/ 0.4s linear;
+}
